@@ -1,0 +1,97 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: .5rem;
+
+}
+
+:root {
+  --fs-sm: .75rem;
+  --fs-m: 1rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 2rem;
+  --fs-xxl: 3rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.6;
+}
+
+
+/******************************************* utility -class******************************************************* */
+
+.flex {
+  display: flex;
+}
+
+.jus-cent {
+  justify-content: center;
+}
+
+.sp-btw {
+  justify-content: space-between;
+}
+
+.algn-cen {
+  align-items: center;
+}
+
+.gap-05 {
+  gap: .5rem
+}
+
+.gap-1 {
+  gap: 1rem
+}
+
+.gap-2 {
+  gap: 2rem
+}
+
+
+.flow-1 {
+  margin-block-end: 1rem;
+}
+
+.flow-2 {
+  margin-block-end: 2rem;
+}
+
+.flow-3 {
+  margin-block-end: 3rem;
+}
+
+.flow-4 {
+  margin-block-end: 4rem;
+}
+
+.flow-5 {
+  margin-block-end: 5rem;
+}
+
+/******************************************* ******************************************************* */
+
+
+.card {
+  /* max-width: 60%; */
+  box-shadow: 1px 2px 4px 1px rgb(240, 238, 238);
+  padding: .5rem;
+  /* border: 1px solid; */
+
+}
+
+::placeholder {
+  padding-left: 2.7rem;
+}
+
+/* .search{
+  background-color: red;
+} */
