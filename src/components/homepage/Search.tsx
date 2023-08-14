@@ -1,5 +1,5 @@
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
-import bgImage from '../photos/backgroundImg.png';
+import bgImage from '../../photos/backgroundImg.png';
 import { Button } from '@mui/material';
 
 const Search = () => {

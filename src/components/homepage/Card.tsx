@@ -1,12 +1,12 @@
 import PublicIcon from '@mui/icons-material/Public';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import imagetext from '../photos/imageText.jpg'
-import starbuck from '../photos/starbuck.jpg'
+import starbuck from '../../photos/starbuck.jpg'
 
 
 const Card = () => {
     return (
-        <article className="card flex gap-2" style={{ color: '#334680' }}>
+        <article className="card flex gap-2 flow-2" style={{ color: '#334680' }}>
             <div className='flex' style={{ width: '5.625rem', height: '5.625rem', alignSelf: 'flexStart' }}>
                 <img style={{ width: '100%', objectFit: 'cover' }} src={starbuck} alt="" className="src" />
             </div>

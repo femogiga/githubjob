@@ -1,4 +1,4 @@
-import style from '../css/mainform.module.css'
+import style from './css/mainform.module.css'
 import PublicIcon from '@mui/icons-material/Public';
 
 const MainForm = ()=>{
