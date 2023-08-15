@@ -6,7 +6,7 @@
 }
 
 :root {
-  --fs-sm: .75rem;
+  --clr-gray: #B9BDCF --fs-sm: .75rem;
   --fs-m: 1rem;
   --fs-lg: 1.5rem;
   --fs-xl: 2rem;
@@ -25,8 +25,8 @@ body {
   line-height: 1.6;
 }
 
-fieldset{
-  border:none;
+fieldset {
+  border: none;
 }
 
 
@@ -59,6 +59,7 @@ fieldset{
 .gap-2 {
   gap: 2rem
 }
+
 .flow-05 {
   margin-block-end: .5rem;
 }
@@ -83,12 +84,17 @@ fieldset{
   margin-block-end: 5rem;
 }
 
+.clr-gray {
+  color: var(--clr-gray);
+}
+
+
 /******************************************* ******************************************************* */
 
 
 .card {
   /* max-width: 60%; */
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0,.20);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .20);
   padding: .5rem;
 
 }

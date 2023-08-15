@@ -1,64 +1,30 @@
 import PublicIcon from '@mui/icons-material/Public';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import starbuck from '../../photos/starbuck.jpg'
+import style from './css/profile.module.css'
 
 const JobProfile = () =>{
+    const dwell = '5 days ago'
+    const location = 'New York'
+    const jobTitle = 'Front-End Software Engineer'
     return(
-
             <div>
-                <h1>Github Jobs</h1>
-                <article>
-                    <p><span>&#8592;</span>Back to search</p>
-                    <h5>HOW TO APPLY</h5>
-                    <p>Please email a copy of your resume and online portfolio to
-                    <span>{' wes@kasisto.com'}</span> and CC <span>{'eric@kasisto.com'}</span>
-                    </p>
-                </article>
-                <div>
-                    <h2>{'Front-End Software Engineer'}</h2>
-                    <p>Fulltime</p>
-                    <p className='flex gap-05 algn-cen'><AccessTimeIcon fontSize='small' /> <span>5 days ago</span></p>
+                <div className='flow-2'>
+                    <h2 className = {`${style.jobTitle}`}>{jobTitle}</h2>
+                    <p className={style.fulltime}>Full time</p>
+                    <p className={`flex gap-05 algn-cen ${style.clrgray}`}><AccessTimeIcon fontSize='small'  style={{fontSize:'1rem' }}/> <span  style={{fontSize:'.75rem' }}>{dwell}</span></p>
 
                 </div>
                 <article className ='flex gap-1'>
-                    <div className='flex' style={{ width: '5.625rem', height: '5.625rem', alignSelf: 'flexStart' }}>
+                    <div className='flex' style={{ width: '2.625rem', height: '2.625rem', alignSelf: 'flexStart' }}>
                         <img style={{ width: '100%', objectFit: 'cover' }} src={starbuck} alt="" className="src" />
                     </div>
-                    <div>
-                        <h3>{'Kasito'}</h3>
-                        <p className='flex gap-05 algn-cen'><PublicIcon fontSize='small' /><span>New York</span></p>
+                    <div className= 'flow-2'>
+                        <h4>{'Kasito'}</h4>
+                        <p className={`flex gap-05 algn-cen ${style.clrgray}`}  style={{fontSize:'.75rem' }}><PublicIcon style={{fontSize:'1rem' }}/><span>{location}</span></p>
                     </div>
                 </article>
-                <section>
-                   <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Dolorum incidunt praesentium, doloremque quia ad aliquid
-                     quisquam optio eum? Earum sequi odio dignissimos voluptat
-                     e neque quidem quas ad veniam in id!
-                    </p>
 
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Dolorum incidunt praesentium, doloremque quia ad aliquid
-                     quisquam optio eum? Earum sequi odio dignissimos voluptat
-                     e neque quidem quas ad veniam in id!
-                    </p>
-
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Dolorum incidunt praesentium, doloremque quia ad aliquid
-                     quisquam optio eum? Earum sequi odio dignissimos voluptat
-                     e neque quidem quas ad veniam in id!
-                    </p>
-
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Dolorum incidunt praesentium, doloremque quia ad aliquid
-                     quisquam optio eum? Earum sequi odio dignissimos voluptat
-                     e neque quidem quas ad veniam in id!
-                    </p>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Dolorum incidunt praesentium, doloremque quia ad aliquid
-                     quisquam optio eum? Earum sequi odio dignissimos voluptat
-                     e neque quidem quas ad veniam in id!
-                    </p>
-                </section>
 
             </div>
 
