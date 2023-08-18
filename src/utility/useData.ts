@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export function useData(currentPage) {
+export function useData() {
     interface Job {
         companyName: string
         categories: string[]
@@ -12,30 +12,30 @@ export function useData(currentPage) {
     }
     const [data, setData] = useState<any>([])
     const [loading, setLoading] = useState<boolean>(true)
-    const [error, setError] = useState<null|boolean | string>()
+    const [error, setError] = useState<null | boolean | string>()
 
     // const[currentPage,setCurrentPage] = useState(1)
     useEffect(() => {
-        const perPage = 5
-        const offset = (currentPage-1 )* perPage
-        const baseUrl = `https://himalayas.app/jobs/api?limit=${perPage}&offset=${offset}&city=London`
-        // const baseUrl = `https://himalayas.app/jobs/api?`
+        // const perPage = 5
+        // const offset = (currentPage-1 )* perPage
+        // const baseUrl = `https://himalayas.app/jobs/api?limit=${perPage}&offset=${offset}&city=London`
+        const baseUrl = `https://himalayas.app/jobs/api?`
         fetch(baseUrl)
             .then(res => res.json())
             .then(res => {
                 setLoading(false)
                 setError(false)
-                if(typeof res === null  || typeof res === 'string'){
+                if (typeof res === null || typeof res === 'string') {
                     return
                 }
                 setData(res.jobs)
-
+                // console.log(data)
             })
             .catch(error => {
                 console.error(error)
                 setError(error)
                 setLoading(true)
             })
-    }, [loading, error,currentPage])
+    }, [loading, error])
     return [data, loading, error]
 }

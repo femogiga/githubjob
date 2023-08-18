@@ -17,7 +17,7 @@ const Card = ({companyLogo,companyName,title,minSalary,locationRestrictions,pubD
                 <h4>{companyName}</h4>
                 <p>{title}</p>
                 <div>
-                    <p>{minSalary || ""}</p>
+                    <p>{minSalary || "Full time"}</p>
                     <div className='flex sp-btw gap-05 sp-btw' style={{ fontSize: '.75rem', color: '#B7BCCE' }}>
                         <p className='flex gap-05 algn-cen'><PublicIcon fontSize='small' /><span>{locationRestrictions[0]}</span></p>
                         <p className='flex gap-05 algn-cen'><AccessTimeIcon fontSize='small' /> <span>{`${timeConverter(pubDate)} days ago`}</span></p>
