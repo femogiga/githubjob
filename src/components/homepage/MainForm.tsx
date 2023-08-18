@@ -17,11 +17,11 @@ const MainForm = ()=>{
             </fieldset>
             <fieldset className={style.radioCont}>
                 <div>
-                    <input type='radio' name = 'location' value ='London' id='london' className={`${style.radio}`}/>
+                    <input type='radio' name = 'location' value ='London' id='london' className={`${style.radio}`} />
                     <label htmlFor="">  London</label>
                 </div>
                 <div>
-                <input type='radio' name = 'location' value ='London' id='amsterdam' className={style.radio}/>
+                <input type='radio' name = 'location' value ='London' id='amsterdam' className={style.radio} />
                     <label htmlFor="">  Amsterdam</label>
                  </div>
                 <div>

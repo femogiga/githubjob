@@ -26,6 +26,10 @@
 
 
 
-.description{
-    color:#334680
+.description {
+    color: #334680
+}
+
+.description p {
+    margin-block-end: 2rem;
 }

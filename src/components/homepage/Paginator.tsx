@@ -3,10 +3,10 @@ import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
 
-const Paginator = () =>{
+const Paginator = ({onChange,currentPage}) =>{
     return(
     <Stack spacing={10}>
-      <Pagination count={15} variant="outlined" color="secondary" />
+      <Pagination count={300} page={currentPage} variant="outlined" color="secondary" onChange={onChange} />
     </Stack>
     )
 }

@@ -1,5 +1,6 @@
 
 import './App.css'
+import Container from './components/Container'
 import Card from './components/homepage/Card'
 import MainForm from './components/homepage/MainForm'
 import Paginator from './components/homepage/Paginator'
@@ -10,25 +11,20 @@ import JobProfile from './components/profile/JobProfile'
 import SiteHeader from './components/profile/SiteHeader'
 
 
-
 function App() {
 
 
   return (
     <div className='app'>
-      {/* <Search/>
-      <MainForm/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Paginator/> */}
-      <Details>
+
+      <Container/>
+
+
+      {/* <Details>
       <SiteHeader/>
         <JobProfile/>
        <Description/>
-      </Details>
+      </Details> */}
 
     </div>
   )
