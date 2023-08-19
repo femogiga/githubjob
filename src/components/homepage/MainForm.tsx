@@ -1,10 +1,10 @@
 import style from './css/mainform.module.css'
 import PublicIcon from '@mui/icons-material/Public';
 
-const MainForm = ({onChange,checked,onSubmit})=>{
+const MainForm = ({ onChange, onSubmit }) => {
 
-    return(
-        <form className={style.form} onSubmit ={onSubmit}>
+    return (
+        <form className={`${style.form} main-form`} onSubmit ={onSubmit}>
             <fieldset className='flex gap-1'>
                 <input type ='checkbox' className={style.checkbox} id="fulltime" name="fullttime"/><label htmlFor="fulltime">Full time</label>
             </fieldset>

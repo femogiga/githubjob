@@ -8,6 +8,9 @@
 
 .howtoapply {}
 
+a{
+    text-decoration: none;
+}
 
 
 .fulltime {
@@ -27,7 +30,8 @@
 
 
 .description {
-    color: #334680
+    color: #334680;
+   
 }
 
 .description p {

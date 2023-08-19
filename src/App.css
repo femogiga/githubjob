@@ -23,6 +23,7 @@
 
 body {
   line-height: 1.6;
+  font-family: 'Roboto', sans-serif, 'Poppins', sans-serif, 'Raleway', sans-serif;
 }
 
 fieldset {
@@ -34,6 +35,10 @@ fieldset {
 
 .flex {
   display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .jus-cent {
@@ -106,3 +111,57 @@ fieldset {
 /* .search{
   background-color: red;
 } */
+
+.salary {
+
+  text-align: center;
+  border: 1px solid #334680;
+  width: 3.938rem;
+  border-radius: 5px;
+  font-size: .80rem;
+  margin-block-end: .5rem;
+}
+
+@media screen and (min-width:700px) {
+  .media-cont {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .cont {
+    width: 100%
+  }
+
+  .mapped {
+    width: 60%;
+    margin-top: 2rem;
+    position: relative;
+  }
+
+  .main-form {
+    width: 33%;
+    margin-block-start: 2rem;
+  }
+
+  .MuiStack-root {
+    /* position:absolute;
+  right:0;
+  bottom:-2rem; */
+    width: 22rem;
+    margin-left: auto;
+  }
+
+  .card-loc {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20rem; */
+  }
+
+  .locloc {
+    position: absolute;
+    right: 1rem
+  }
+
+
+}
